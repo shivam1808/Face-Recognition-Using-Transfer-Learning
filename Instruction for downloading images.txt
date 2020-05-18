@@ -1,0 +1,28 @@
+
+Download Chrome driver ( Go to https://chromedriver.chromium.org/downloads )
+
+If you are using Chrome version 80.0.3987.132 (Click on Ghrome > Help > About Google Chrome to find out ),
+
+select this link for ChromeDriver 80.0.3987.106
+https://chromedriver.storage.googleapis.com/index.html?path=80.0.3987.106/
+
+Save the chromedriver_win32.zip to C:\Software
+Unzip chromedriver_win32.zip, the file should be chromedriver.exe.
+
+Install needed Python package to run this script
+Open dos command prompt
+
+pip install tqdm
+
+Download bing_scraper.py using git
+
+git clone https://github.com/ultralytics/google-images-download
+
+Run the python script to download images
+
+cd google-images-download
+python bing_scraper.py --search "honeybees on flowers" --limit 10 --download --chromedriver "C:\Software\chromedriver.exe"
+
+The image should be saved in a new directroy honeybees_on_flowers
+
+Such as C:\Users[user name]\google-images-download\images\honeybees_on_flowers
